@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AutoDraw</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="painter.css">
+</head>
+
+<body>
+  <header>
+
+
+    <div class="drop-down-menue">
+      <header>
+        <h3> AutoDraw</h3>
+        <img id="exit" src="https://www.autodraw.com//assets/images/x-white.svg" alt="">
+      </header>
+      <ul class="drop-down-menue-items ">
+        <li href="#">Start over <div class="Start-over">
+            <img id="first-size" src="https://www.autodraw.com/assets/images/orientation-landscape.svg" alt="">
+            <img id="second-size" src="https://www.autodraw.com/assets/images/orientation-square.svg" alt="">
+            <img id="third-size" src="https://www.autodraw.com/assets/images/orientation-portrait.svg" alt="">
+          </div>
+
+        </li>
+        <li id="download">Download</li>
+        <li id="share">Share</li>
+        <li id="how-to">How-to</li>
+        <li class="about">About</li>
+      </ul>
+
+    </div>
+
+
+    <div class="how-to">
+      <img id="left-arrow2" onclick="plusSlides(-1)" src="https://www.autodraw.com/assets/images/arrow.svg" alt="">
+      <div class="how-to-content">
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/0.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p> Start doodling and the <em>AutoDraw</em> suggestion tool will start guessing. </p>
+        </div>
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/1.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p>Draw solo with the <em>Draw</em> tool.</p>
+        </div>
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/2.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p>Choose colors with the color picker. </p>
+        </div>
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/3.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p>Add text with the <em>Type</em> tool.</p>
+        </div>
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/4.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p>Make shapes with the <em>Shape</em> tool.</p>
+        </div>
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/5.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p>Add color with the <em>Fill</em> tool.</p>
+        </div>
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/6.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p>Move, resize, and rotate objects with the <em>Select</em> tool.</p>
+        </div>
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/7.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p> Download a PNG or share your work. </p>
+        </div>
+        <div class="vedio">
+          <video src="https://storage.googleapis.com/artlab-public.appspot.com/videos/8.mp4"  autoplay="autoplay" muted="muted"></video>
+          <p> And do it from any device. </p>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+        <h5 id="skip">Skip tutorial</h5>
+      </div>
+      <img id="right-arrow2" onclick="plusSlides(1)" src="https://www.autodraw.com/assets/images/arrow.svg" alt="">
+    </div>
+
+
+    <div id="about">
+      <img id="exit2" src="https://www.autodraw.com/assets/images/x-gray.svg" alt=""><br /><br />
+      <h2>About</h2>
+      <div class="about-content">
+        <div class="about-me">
+          <h2> <span class="point"></span>  My Experince</h2>
+          <hr />
+          <!-- <p>I am a fresh graduate translator, and recently I found passion in programming and front end web developing.    </p> <br /> -->
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+        </div>
+        <div class="about-me">
+          <h2> <span class="point"></span>  My Project</h2>
+          <hr />
+          <p>
+           Hello everyone, it’s me Ghadah, the developer of this simple web application. <p /> <br />
+          <p>
+            My aim was to create something close to <a href="https://www.autodraw.com/">www.autodraw.com.</a></p> <br />
+          <p>With trial and error, and after days of searching and thinking, I ended up with this simple version, leaving you up to judge it!    </p> <br />
+          <!-- <p>My experience was full of challenges, starting from the given deadline -which was after one week- and moving to some other technical challenges. But the truth is: I enjoyed every single challenge.</p> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="mask">
+      <div class="download-model"> Click the download button.<br />
+         <button id="download-button">Download</button>
+         <button id="cancel">Cancel</button>
+       </div>
+    </div>
+
+    <div class="mask2">
+      <div class="share-model"> Copy the link, and share it.<br />
+         <input id="share-input" type="text" name="" value="">
+         <button id="copied">Close</button>
+       </div>
+    </div>
+
+    <div class="mask3">
+      <div class="delete-model"> Are you sure you want to delete?<br />You will not be able to retrieve your previous work.<br />
+         <button id="delete-button">Delete</button>
+         <button id="dont-delete" autofocus> Cancel</button>
+       </div>
+    </div>
+
+    <nav>
+      <img src="https://www.autodraw.com/assets/images/ham.svg" id="ham">
+      <h3 id="title">AutoDraw</h3>
+      <div class="options-content">
+
+        <div class="shapes-container">
+  <div class="shapes-content">
+    <div id="circle">
+      <img src="https://www.autodraw.com/assets/images/icons/circle.svg" alt="">
+    </div>
+
+    <div id="polygon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+    <style>
+        .st0{fill:none;}.st1{fill:none;stroke:#231f20;stroke-width:100;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M1331.5 316.5L1703.1 960l-371.6 643.5h-743L216.9 960l371.6-643.5z" id="Layer_3"/>
+    <g id="STROKES">
+        <path class="st1" d="M1331.5 316.5L1703.1 960l-371.6 643.5h-743L216.9 960l371.6-643.5z" id="XMLID_1_"/>
+    </g>
+</svg>
+    </div>
+
+    <div id="square">
+      <img src="https://www.autodraw.com/assets/images/icons/rectangle.svg" alt="">
+    </div>
+    <div id="traingle">
+      <img src="https://www.autodraw.com/assets/images/icons/triangle.svg" alt="">
+    </div>
+
+    <div id="line">
+      <img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/line-01.svg" alt="">
+    </div>
+
+
+  </div>
+</div>
+
+        <div class="type-content">
+        <select  id="font-style" class="select-css">
+  	<option>Arial</option>
+  	<option>Verdana</option>
+  	<option>Comic Sans MS</option>
+  	<option>Tahoma</option>
+  	<option>Trebuchet MS</option>
+    <option>Times New Roman</option>
+  	<option>Georgia</option>
+  	<option>Garamond</option>
+    <option>Courier New</option>
+    <option>Brush Script MT</option>
+  </select>
+
+  <select id="font-size" class="select-css">
+<option>34</option>
+<option>36</option>
+<option>38</option>
+<option>40</option>
+<option>42</option>
+<option>44</option>
+<option>46</option>
+<option>48</option>
+<option>50</option>
+<option>52</option>
+<option>54</option>
+<option>56</option>
+<option>58</option>
+<option>60</option>
+<option>62</option>
+<option>64</option>
+<option>66</option>
+<option>68</option>
+<option>70</option>
+<option>72</option>
+<option>74</option>
+<option>76</option>
+<option>78</option>
+<option>80</option>
+<option>82</option>
+<option>90</option>
+<option>92</option>
+<option>94</option>
+<option>96</option>
+<option>98</option>
+<option>100</option>
+<option>102</option>
+</select>
+
+<input id="blank" type="text" name="" placeholder="Write your text here" >
+</div>
+
+
+        <div class="draw-content"> <input type="range" min="1" max="50" value="25" class="slider" id="myRange"> </div>
+        <p id="fill-content"><label>Fill: <input id="fillBox" type="checkbox" checked="checked"></label></p>
+        <div class="auto-draw-content">
+          <!-- <h5 > Choose your sticker:</h5> -->
+          <div class="auto-draw-image-content">
+            <img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/bear-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/bear-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/bear-03.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/bird-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/bird-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/bird-03.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/cactus-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/cactus-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/cactus-03.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/cloud-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/cloud-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/cloud-03.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/moon-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/moon-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/moon-03.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/rainbow-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/rainbow-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/rainbow-03.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/star-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/star-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/star-03.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/sun-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/sun-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/sun-03.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/tree-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/tree-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/tree-03.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/house-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/house-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/selman/house-03.svg">
+            <img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-03.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-04.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-05.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-06.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-07.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-08.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-09.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-10.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-11.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-12.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-13.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-14.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-15.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/HAWRAF/house-16.svg">
+            <img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/fox-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/cat-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/ape-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/butterfly-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/cow-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/dog-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/frog-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/horse-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/koala-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/lion-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/owl-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/penguin-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/pig-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/shark-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/snail-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Simone-Noronha/swan-01.svg">
+            <img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/bicep-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/blazer-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/dove-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/female-symbol-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/fist-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/flag-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/hair-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/hair-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/hand-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/hand-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/lipstick-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/mouth-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Tori-Hinn/peace-symbol-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Pei-Liew/black-cat-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Pei-Liew/crow-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Pei-Liew/ladder-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Pei-Liew/lit-match-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Pei-Liew/rabbits-foot-keychain-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Pei-Liew/wishbone-01.svg">
+            <img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/balloon-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/bear-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/bird-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/cactus-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/cloud-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/fox-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/heart-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/monster-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/monster-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/moon-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/rainbow-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/star-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/sun-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/tree-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/tree-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Erin-Butner/wave-01.svg">
+            <img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/bird-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/bike-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/bridge-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/building-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/building-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/building-03.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/building-04.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/building-05.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/building-06.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/building-07.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/building-08.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/bus-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/car-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/car-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/coffee-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/fire-hydrant-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/godzilla-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/newspaper-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/pizza-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/river-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/sign-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/sign-02.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/sign-03.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/sign-04.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/skateboard-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/street-lamp-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/traffic-light-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/train-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/trash-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/tree.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Julia-Melograna/unicycle.svg">
+            <img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/balloon-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/heart-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/heart-02.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/cake-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/cat-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/cupcake-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/flower-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/gift-01.svg"><img
+              src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/greeting-card-01.svg"><img src="https://storage.googleapis.com/artlab-public.appspot.com/stencils/Melia-Tandiono/greeting-card-02.svg">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tool-bar">
+      <!-- <div id="select" class="tool">
+        <svg xmlns="http://www.w3.org/2000/svg" style="stroke: #000;" id="Layer_1" data-name="Layer 1" viewBox="0 0 45 45">
+          <defs>
+            <style>
+              .cls-1,
+              .cls-2 {
+                fill: none
+              }
+
+              .cls-1 {
+                stroke-miterlimit: 10
+              }
+            </style>
+          </defs>
+          <title>Artboard 1</title>
+          <path class="cls-1" d="M22.92 9v25m12.5-12.5h-25m9.71-9.71L22.92 9l2.79 2.79m6.92 6.92l2.79 2.79-2.79 2.79m-6.92 6.92L22.92 34l-2.79-2.79m-6.92-6.92l-2.79-2.79 2.79-2.79" />
+          <path </svg>
+            <p class="info"> Select </p>
+      </div> -->
+      <div id="zoom" class="tool-2">
+        <svg xmlns="http://www.w3.org/2000/svg" style="stroke: #000;" width="42" height="42" viewBox="0 0 42 42">
+          <g fill="none" stroke-miterlimit="10">
+            <circle cx="19.42" cy="18.77" r="7.43" stroke-width="1.14" />
+            <path stroke-width="2" d="M23.97 24.61l6.04 6.04" />
+            <path d="M19.4 15.17v7m3.5-3.5h-7" />
+          </g>
+        </svg>
+        <p class="info"> ComingSoon </p>
+      </div>
+
+      <div id="autodraw" class="tool">
+        <svg xmlns="http://www.w3.org/2000/svg" style="stroke: #000;" width="42" height="42" viewBox="0 0 42 42">
+          <g stroke-miterlimit="10">
+            <path d="M15.91 25.73l8.18-16.55 3.84 1.9-8.18 16.55-3.74 2.84-.1-4.74zm.21-.05l3.58 1.88" fill="none" stroke-width=".963" />
+            <path stroke-width=".753" d="M15.83 32.82h10.55" />
+          </g>
+          <path
+            d="M9.62 18.7A2 2 0 0 0 11 17.3l.27-1 .27 1A2 2 0 0 0 13 18.7l1 .3-1 .27a2 2 0 0 0-1.41 1.41l-.27 1-.27-1a2 2 0 0 0-1.41-1.41l-1-.27zm20.43 4.23a1.52 1.52 0 0 0 1.08-1.08l.2-.76.2.76a1.52 1.52 0 0 0 1.08 1.08l.76.2-.76.2a1.52 1.52 0 0 0-1.08 1.08l-.2.76-.2-.76a1.52 1.52 0 0 0-1.08-1.08l-.76-.2zM13 11.13a1.17 1.17 0 0 0 .82-.82l.18-.58.16.58a1.17 1.17 0 0 0 .82.82l.58.16-.58.16a1.17 1.17 0 0 0-.82.82l-.16.58-.16-.58a1.17 1.17 0 0 0-.84-.82l-.58-.16z"
+            stroke-miterlimit="10" />
+        </svg>
+        <p class="info"> AutoDraw </p>
+      </div>
+
+      <div id="draw" class="tool">
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" style="stroke:#000;" viewBox="0 0 45 45">
+          <defs>
+            <style>
+              .cls-1,
+              .cls-2 {
+                fill: none
+              }
+
+              .cls-1 {
+                stroke-miterlimit: 10
+              }
+            </style>
+          </defs>
+          <title>Artboard 7</title>
+          <g id="_Group_" data-name="&lt;Group&gt;">
+            <g id="_Group_2" data-name="&lt;Group&gt;">
+              <path id="_Path_" data-name="&lt;Path&gt;" class="cls-1" d="M16.43 27.02l8.18-16.55 3.84 1.9-8.18 16.55-3.74 2.84-.1-4.74z" />
+              <path id="_Path_2" data-name="&lt;Path&gt;" class="cls-1" d="M16.64 26.97l3.58 1.88" />
+            </g>
+          </g>
+          <path class="cls-1" d="M16.22 34.1c5.3 0 8.05-2.58 9.52-1.92.78.35.34 1.66 1.62 1.94a6.05 6.05 0 0 0 3.81-.56" />
+        </svg>
+        <p class="info"> Draw </p>
+      </div>
+
+      <div id="type" class="tool">
+        <svg xmlns="http://www.w3.org/2000/svg" width="42" style="stroke:#000;" stroke-width="0.2" height="42" viewBox="0 0 42 42">
+          <path
+            d="M29.92 11.75v4.52h-.57a8.31 8.31 0 0 0-.89-2 3.36 3.36 0 0 0-1.35-1.07 4.51 4.51 0 0 0-1.68-.2h-2.37v13.32a5.26 5.26 0 0 0 .15 1.68 3.24 3.24 0 0 0 .57.9 1.73 1.73 0 0 0 1.15.58h1.25v.81H16v-.85h1.09a1.85 1.85 0 0 0 1.2-.6 2.06 2.06 0 0 0 .5-.77 7.06 7.06 0 0 0 .12-1.75V13h-2.3a3.63 3.63 0 0 0-2.51.56 5.86 5.86 0 0 0-1.39 2.74h-.63v-4.55h17.84m.95-.95H11.13v6.42h2.37l.17-.73a5 5 0 0 1 1.11-2.26 3.23 3.23 0 0 1 1.86-.3H18v12.39a7.37 7.37 0 0 1-.07 1.44 1.11 1.11 0 0 1-.26.39 1 1 0 0 1-.54.34h-2v2.71h12.01v-2.71h-2.2a.82.82 0 0 1-.49-.31 2.32 2.32 0 0 1-.37-.62 7 7 0 0 1-.08-1.24v-12.4h1.43a4.34 4.34 0 0 1 1.27.08 2.41 2.41 0 0 1 1 .76 7.44 7.44 0 0 1 .77 1.79l.21.66h2.2V10.8z" />
+        </svg>
+        <p class="info"> Type </p>
+      </div>
+
+      <div id="BackgroundColor" class="tool">
+        <svg xmlns="http://www.w3.org/2000/svg" style="stroke:#000;" id="Layer_1" data-name="Layer 1" viewBox="0 0 45 45">
+          <defs>
+            <style>
+              .cls-1,
+              .cls-3 {
+                fill: #ccc
+              }
+
+              .cls-2,
+              .cls-4 {
+                fill: none
+              }
+
+              .cls-2,
+              .cls-3 {
+                stroke-miterlimit: 10
+              }
+            </style>
+          </defs>
+          <title>Artboard 3</title>
+          <path id="_Path_" data-name="&lt;Path&gt;" class="cls-1" d="M33.36 20.5s1.08 1.5-.7 3.27l-5 5s-2.23 2.67-4.63.27l-8.48-8.48z" />
+          <path id="_Path_2" data-name="&lt;Path&gt;" class="cls-2" d="M15.22 20.5h18.31" />
+          <g id="_Group_" data-name="&lt;Group&gt;">
+            <path id="_Path_3" data-name="&lt;Path&gt;" class="cls-2" d="M24.38 10.92l8.5 8.5a3.08 3.08 0 0 1 0 4.36L27.63 29a3.08 3.08 0 0 1-4.36 0l-8.5-8.5z" />
+            <path id="_Path_4" data-name="&lt;Path&gt;" class="cls-3" d="M14 22.75s-2.64 6.31-2.64 7.58a2.52 2.52 0 0 0 2.64 2.5 2.47 2.47 0 0 0 2.64-2.43c0-1.12-2.64-7.65-2.64-7.65z" />
+          </g>
+        </svg>
+        <p class="info"> BackgroundColor </p>
+      </div>
+
+      <div id="shape" class="tool">
+        <svg xmlns="http://www.w3.org/2000/svg" style="stroke: #000;" id="Layer_1" data-name="Layer 1" viewBox="0 0 45 45">
+          <defs>
+            <style>
+              .cls-1,
+              .cls-2,
+              .cls-3 {
+                fill: none
+              }
+
+              .cls-1,
+              .cls-2 {
+                stroke-miterlimit: 10
+              }
+
+              .cls-2 {
+                stroke-width: 1.03px
+              }
+            </style>
+          </defs>
+          <title>Artboard 8</title>
+          <path class="cls-1" d="M20.42 19.83h12v12h-12z" />
+          <circle class="cls-2" cx="19.72" cy="18.56" r="7.35" />
+        </svg>
+        <p class="info"> Shape </p>
+      </div>
+
+      <div class="colors-container">
+        <div class="colors" style="background-color: #4285f4;">
+          <div class="colors-pallet">
+            <img id="left-arrow" onclick="plusPallet(-1)" src="https://www.autodraw.com/assets/images/arrow.svg" alt="">
+            <ul class=" pallet">
+              <li style="background-color: #4285f4;"></li>
+              <li style="background-color: #fcd015;"></li>
+              <li style="background-color: #2dd354;"></li>
+              <li style="background-color: #f7931e;"></li>
+              <li style="background-color: #ef4037;"></li>
+              <li style="background-color: #b442cc;"></li>
+              <li style="background-color: black;"></li>
+              <li style="background-color: white;"></li>
+            </ul>
+            <ul class=" pallet">
+              <li style="background-color: #e6e6e6;"></li>
+              <li style="background-color: #b3b3b3;"></li>
+              <li style="background-color: #666666;"></li>
+              <li style="background-color: #472929;"></li>
+              <li style="background-color: #98643d;"></li>
+              <li style="background-color: #d19046;"></li>
+              <li style="background-color: #ffc382;"></li>
+              <li style="background-color: #ffdcb4;"></li>
+            </ul>
+            <ul class="pallet">
+              <li style="background-color: #2828ea;"></li>
+              <li style="background-color: #6bfeda;"></li>
+              <li style="background-color: #2ff42f;"></li>
+              <li style="background-color: #eefd54;"></li>
+              <li style="background-color: #8cc63f;"></li>
+              <li style="background-color: #e0bfe6;"></li>
+              <li style="background-color: #149588;"></li>
+              <li style="background-color: #0071bc;"></li>
+            </ul>
+            <ul class=" pallet">
+              <li style="background-color: #662d91;"></li>
+              <li style="background-color: #2e3192;"></li>
+              <li style="background-color: #0071bc;"></li>
+              <li style="background-color: #29abe2;"></li>
+              <li style="background-color: #00ffff;"></li>
+              <li style="background-color: #00a99d;"></li>
+              <li style="background-color: #22b573;"></li>
+              <li style="background-color: #006837;"></li>
+            </ul>
+            <ul class="pallet">
+              <li style="background-color: #ea7fb9;"></li>
+              <li style="background-color: #c1272d;"></li>
+              <li style="background-color: #ed1c24;"></li>
+              <li style="background-color: #f15a24;"></li>
+              <li style="background-color: #fbb03b;"></li>
+              <li style="background-color: #fcee21;"></li>
+              <li style="background-color: #d9e021;"></li>
+              <input id="colors-input" type="color" name="" >
+            </ul>
+            <img id="right-arrow" onclick="plusPallet(1)" src="https://www.autodraw.com/assets/images/arrow.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="undo" class="tool-2">
+        <svg xmlns="http://www.w3.org/2000/svg"  width="42" height="42" viewBox="0 0 42 42">
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <path d="M15 30h5.51a7 7 0 1 0 .07-14H15" />
+            <path d="M18.1 19.91l-3.94-3.94 3.94-3.94" />
+          </g>
+        </svg>
+        <p class="info"> Undo </p>
+      </div>
+
+      <div id="redo" class="tool-2">
+        <svg xmlns="http://www.w3.org/2000/svg"  width="42" height="42" viewBox="0 0 42 42">
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <path d="M15 30h5.51a7 7 0 1 0 .07-14H15" />
+            <path d="M18.1 19.91l-3.94-3.94 3.94-3.94" />
+          </g>
+        </svg>
+        <p class="info"> Redo </p>
+      </div>
+
+      <div id="delete" class="tool-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+          <path d="M14.5 29.61V15.5h13v14.11a.89.89 0 0 1-.89.89H15.39a.89.89 0 0 1-.89-.89zm-1-15.36v1.25h15v-1.25a.75.75 0 0 0-.75-.75h-13.5a.75.75 0 0 0-.75.75z" fill="none" stroke-miterlimit="10" />
+          <path d="M18.5 14v-2a.48.48 0 0 1 .5-.5h4a.48.48 0 0 1 .48.48v2" fill="none" stroke-miterlimit="10" />
+          <path fill="none" stroke-miterlimit="10" stroke-width=".981" d="M18.15 27.63V18m2.88 9.63V18m3.01 9.63V18" />
+        </svg>
+        <p class="info"> Delete </p>
+      </div>
+    </section>
+
+
+
+    <canvas id="canvas"></canvas>
+
+
+  </main>
+
+
+  <script src="painter.js"></script>
+
+</body>
+
+</html>
